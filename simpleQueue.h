@@ -1,5 +1,5 @@
-#ifndef ASSIGNMNET4_H
-#define ASSIGNMENT4_H
+#ifndef SIMPLEQUEUE_H
+#define SIMPLEQUEUE_H
 #include <stack>
 
 class Queue {
