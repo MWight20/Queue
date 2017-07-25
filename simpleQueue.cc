@@ -1,4 +1,4 @@
-#include "assignment4.h"
+#include "simpleQueue.h"
 #include <iostream>
 #include <iomanip>
 #include <stack>
@@ -11,24 +11,29 @@ using std::cerr;
 using std::stack;
 using std::string;
 
-int main() {
+int main() 
+{
     Queue q;
     string op;
     int val = 0;
 
    cout << "operation -- size front end" << endl;
-   while ( !cin.eof() ) {
+   while ( !cin.eof() ) 
+   {
         cin >> op;
-        if ( op == "push" ) {
+        if ( op == "push" ) 
+	{
             cin >> val;
             q.push( val );
             cout << op << " " << val << "    -- ";
         }
-        else if ( op == "pop" ) {
+        else if ( op == "pop" )
+	{
             q.pop();
             cout << op << "       -- ";
         }
-        else {
+        else
+	{
             cerr << "Error input: " << op << endl;
             return 1;
         }
@@ -155,7 +160,8 @@ void Queue::push(const int& val)
 ******************************************************************************/
 void Queue::pop()
 {
-  if(!empty()){
+  if(!empty())
+  {
      front();
   }
   s2.pop();
